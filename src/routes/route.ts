@@ -21,6 +21,7 @@ export class Controller {
     this.contractService=new ContractService()
     this.factoryRoutes()
     this.contractRoutes()
+    this.livenessRoutes()
   }
 
 
