@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsc && nodemon dist/server.js",
-    "start": "tsc && node dist/server.js"
+    "start": "tsc && node dist/server.js",
+    "postinstall": "tsc && copyfiles -u 1 src/**/*.ejs dist/",
+    "copy-ejs": "copyfiles -u 1 src/**/*.ejs dist/"
   },
   "author": "Ayo Solomon",
   "license": "ISC",
